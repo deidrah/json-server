@@ -8,6 +8,11 @@
     "lib",
     "public"
   ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:cypress/recommended"
+    ]
+  },
   "scripts": {
     "prepare": "husky install",
     "test": "npm run build && cross-env NODE_ENV=test jest && npm run lint",
@@ -47,6 +52,7 @@
     "@babel/node": "^7.12.6",
     "@babel/preset-env": "^7.12.1",
     "cross-env": "^7.0.2",
+    "cypress": "^8.4.1",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.1",
